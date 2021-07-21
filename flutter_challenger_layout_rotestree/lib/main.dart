@@ -20,6 +20,13 @@ class PrimeiraTela extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          Image.asset("img/barbeiro.png"),
+          Container(
+            child: Text(
+              "Seja bem vindo ao meu app de barbershop, escolha as 2 opções abaixo",
+              style: TextStyle(backgroundColor: Colors.greenAccent),
+            ),
+          ),
           ElevatedButton(
             child: Text('Serviços'),
             onPressed: () {
@@ -37,7 +44,7 @@ class PrimeiraTela extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => TerceiraRota()),
               );
             },
-          )
+          ),
         ],
       ),
     );
@@ -79,11 +86,10 @@ class TerceiraRota extends StatelessWidget {
         body: ListView(
           children: <Widget>[
             Text(
-              "Barbeiro nascido ramo.",
+              "Barbeiro nascido ramo, seu você leu essa base, te amo sora.",
               style: TextStyle(
-                color: Colors.black,
-                fontSize: 13,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.greenAccent,
+                fontSize: 17,
               ),
             )
           ],
